@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SportCentral - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><h1>SPORT<sub>CENTRAL</sub></h1></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Sporturi</a>
+					<a href="index.html#jucatori">Jucători</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/lm.jpg);">
+			<div class="content">
+				<p>Jucător</p>
+				<h1>Totul despre Lionel Messi</h1>
+			</div>
+			<h3 class="watermark">SPORT<sub>CENTRAL</sub></h3>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Despre acest jucător</h2>
+			<p>Lionel Andrés Messi Cuccittini (n. 24 iunie 1987, Rosario, Provincia Santa Fe, Argentina) este un fotbalist argentinian care va juca pe post de atacant sau mijlocaș la Inter Miami CF și la echipa națională a Argentinei.</p>
+			<p>Messi a evoluat la FC Barcelona în Primera División timp de 17 ani, între anii 2004 si 2021. Messi este considerat drept cel mai bun jucător din generația sa, și unul dintre cei mai buni din istoria fotbalului, fiind nominalizat la Jucătorul anului până la vârsta de 21 de ani. El a fost desemnat de FIFPro cât și de World Soccer Magazine "tânărul jucător al anului" timp de trei ani consecutiv în perioada 2003-2005. Stilul său de joc a atras comparații între el și legenda fotbalului Diego Maradona, și însuși Maradona l-a declarat pe Messi succesorul său.</p>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SportCentral - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><h1>SPORT<sub>CENTRAL</sub></h1></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Sporturi</a>
+					<a href="index.html#jucatori">Jucători</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/fotbal.jpg);">
+			<div class="content">
+				<p>Sport</p>
+				<h1>Totul despre fotbal</h1>
+			</div>
+			<h3 class="watermark">SPORT<sub>CENTRAL</sub></h3>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Știai că&hellip;</h2>
+			<p id="factcont">&hellip;</p>
+			<button onclick="fact();" style="margin-bottom: 1.5rem;">Află ceva nou</button>
+
+			<h2>Despre acest sport</h2>
+			<p>Fotbalul este un sport de echipă ce se dispută între două echipe alcătuite din 11 jucători fiecare. La începutul secolului al XXI-lea era jucat de peste 250 de milioane de jucători în peste 200 de țări, ceea ce îl face cel mai popular sport din lume.</p>
+			<p>Se joacă cu o minge sferică pe un teren dreptunghiular, acoperit cu iarbă, cu câte o poartă la fiecare capăt. Scopul jocului este de a înscrie goluri introducând mingea în poarta adversarului. În afara portarului, ceilalți jucători nu se pot folosi de mâini pentru a manevra mingea. Câștigătorul meciului este echipa care a înscris mai multe goluri la încheierea partidei.</p>
+
+			<h2>Etimologie</h2>
+			<p>Legile jocului au fost formate în Anglia de The Football Association în 1863, unde a primit denumirea de association football, pentru a nu se confunda cu numele altor forme de fotbal existente în acele timpuri, printre care fotbalul american sau fotbalul australian. În aceste zone este cunoscut și sub numele de soccer, termen originar din Anglia, apărut în anii 1880 ca o abreviere Oxford "-er" a cuvântului „asociație”.</p>
+
+			<h2>Natura jocului</h2>
+			<p>Fotbalul se joacă după un set de reguli, cunoscute sub numele de Legile Jocului. Acestea sunt dezvoltate în continuare:</p>
+			<p>Două echipe de câte 11 jucători fiecare încearcă să lovească o minge rotundă (mingea de fotbal), cu scopul de a o introduce în poarta adversă. Echipa care înscrie mai multe goluri până la finalul jocului este declarată câștigătoare; dacă ambele echipe au marcat același număr de goluri, meciul este considerat egal. Una dintre primele reguli este interzicerea atingerii intenționate a mingii cu mâna în timpul jocului (excepție fac portarii). Singura dată când jucătorul se poate folosi de mâini este atunci când aruncă de la margine (execută un aut). În rest, jucătorii se pot folosi de orice parte a corpului pentru a direcționa mingea.</p>
+
+			<h2>Fotbalul în România</h2>
+			<p>Echipa națională de fotbal a României își începe activitatea prin meciul din 8 iunie 1922, de la Belgrad, contra Iugoslaviei, scorul fiindu-i favorabil, 2-1. La 20 mai 1923, Comisia de Fotbal a FSSR (Federația Societăților Sportive din România) este admisă la Congresul de la Zürich ca membră a FIFA. În această calitate de membră a FIFA, România participă la Turneul Olimpic de Fotbal de la Jocurile Olimpice din 1924, desfășurate la Paris. Federația Română de Fotbal este membră fondatoare a UEFA în 1954. Din august 1990, FRF a devenit organ independent de conducere al mișcării fotbalistice din România, primul președinte ales fiind Mircea Sandu.</p>
+			<p>La nivel internațional, selecționata de fotbal a României a participat până acum la 7 Campionate Mondiale de Fotbal. Cele mai mari succese le-a înregistrat pe parcursul anilor '90. În 1994, la Campionatul Mondial din Statele Unite, echipa României a reușit să ajungă până în sferturi, clasându-se atunci pe poziția 6 în clasamentul FIFA. Liderul generației de aur a fotbalului românesc este Gheorghe Hagi. În prezent, dintre fotbaliștii români celebri pot fi amintiți Adrian Mutu și Cristian Chivu.</p>
+			<p>Cel mai cunoscut club de fotbal din România este FCSB, care în 1986 a fost prima echipă din estul Europei și singura din România care a câștigat Cupa Campionilor Europeni. De asemenea, în 1989 a mai jucat o finală a Cupei Campionilor Europeni. O altă echipă de succes din fotbalul românesc este Dinamo București, care a jucat o semifinală a Cupei Campionilor Europeni în 1984, iar în 1990 semifinala Cupei Cupelor UEFA.</p>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+		<script type="text/javascript">
+			const facts = ["Fotbalul este cel mai cunoscut sport de pe glob.", "Se crede că fotbalul a fost inventat în China.", "Peste 3.5 miliarde de persoane se uită la FIFA World Cup la fiecare ediție.", "Cel mai rapid gol a fost marcat după nici 2.4 secunde.", "Mingile de fotbal se produc în Pakistan."];
+			function fact() {
+				document.getElementById('factcont').innerHTML = facts[Math.floor(Math.random() * facts.length)];
+			}
+			fact();
+		</script>
+	</body>
+</html>

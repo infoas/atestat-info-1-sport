@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SportCentral - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><h1>SPORT<sub>CENTRAL</sub></h1></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Sporturi</a>
+					<a href="index.html#jucatori">Jucători</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/atletism.jpg);">
+			<div class="content">
+				<p>Sport</p>
+				<h1>Totul despre atletism</h1>
+			</div>
+			<h3 class="watermark">SPORT<sub>CENTRAL</sub></h3>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Știai că&hellip;</h2>
+			<p id="factcont">&hellip;</p>
+			<button onclick="fact();" style="margin-bottom: 1.5rem;">Află ceva nou</button>
+
+			<h2>Despre acest sport</h2>
+			<p>Atletismul este unul din cele mai populare sporturi din lume. Este o ramură sportivă care cuprinde diverse probe de alergări și de marș, de sărituri și aruncări, sau probe combinate, la care participă atleții. Termenul a fost preluat după francezul athlétisme, dar originea e în greaca veche: ἀθλητής / athlêtês, „participant la o competiție, concurent”, derivat din ἆθλος  / áthlos, „concurs, întrecere”.</p>
+
+			<h2>Istoric</h2>
+			<p>Atletismul se practică în cadrul Jocurilor Panelenice (Jocurile Phytice, Istmice, Nemeice, Olimpice) în Grecia antică.</p>
+			<p>Atletismul modern se constituie ca sport în Anglia, la mijlocul secolului al XIX-lea.</p>
+
+			<h2>Atletismul în România</h2>
+			<p>Datorită studenților români care studiau în Germania, Franța și Austria, atletismul pătrunde în România ca sport la sfârșitul secolului XIX. Se organizează concursuri pentru elevi și adulți, se înființează societăți („Societatea română de alergări pe jos”), apar cărți („Atletismul” - 1875, „Exerciții atletice” -1879).</p>
+			<p>În 1912 este fondată Federația Română de Atletism (F.R.A.), cea care coordonează secțiile de atletism ale Cluburilor și Asociațiilor sportive din România. Primele Campionate Naționale ale României se organizează în anul 1914, la 16 probe, numai pentru bărbați. Abia în 1922 se organizează primele concursuri cu participare feminină. Din anul 1952 atleții români participă regulat la toate marile competiții mondiale.</p>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+		<script type="text/javascript">
+			const facts = ["Atletismul este una dintre cele 4 sporturi care au fost întotdeauna în jocurile olimpice.", "Atletismul se joacă încă din jocurile antice."];
+			function fact() {
+				document.getElementById('factcont').innerHTML = facts[Math.floor(Math.random() * facts.length)];
+			}
+			fact();
+		</script>
+	</body>
+</html>

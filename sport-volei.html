@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SportCentral - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><h1>SPORT<sub>CENTRAL</sub></h1></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Sporturi</a>
+					<a href="index.html#jucatori">Jucători</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/volei.jpg);">
+			<div class="content">
+				<p>Sport</p>
+				<h1>Totul despre volei</h1>
+			</div>
+			<h3 class="watermark">SPORT<sub>CENTRAL</sub></h3>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Știai că&hellip;</h2>
+			<p id="factcont">&hellip;</p>
+			<button onclick="fact();" style="margin-bottom: 1.5rem;">Află ceva nou</button>
+
+			<h2>Despre acest sport</h2>
+			<p>Voleiul este un sport în care două echipe, separate de un fileu înalt, trebuie să treacă o minge pe deasupra acestuia, cu scopul de a face ca mingea să atingă terenul advers. Fiecărei echipe îi sunt permise cel mult trei loviri (și una sau doua loviri) pentru a trimite mingea către terenul celeilalte echipe. Pot atinge cu piciorul doar unul din fiecare echipă, la fiecare servă. Pentru a servi se va ieși din teren. Un punct se câștigă dacă mingea atinge terenul advers sau dacă nu se respectă regula celor trei atingeri.</p>
+			<p>O echipa de volei este alcătuită din 6 jucători. Se joacă 3 seturi câștigătoare din 5, fiecare set a câte 25 de puncte; în caz de egalitate la scorul 24 - 24 se continuă setul până în momentul în care una din cele două echipe obține o diferență de 2 puncte (29 - 27, 31 - 29 etc). În cazul în care este nevoie de jucarea ultimului set pentru desemnarea câștigătorului, acesta se joacă până la 15 (sau până la o diferență de două puncte).</p>
+
+			<h2>Istoric</h2>
+			<p>După fiecare set, echipele schimbă terenurile de joc, cu excepția setului decisiv. În setul decisiv, de îndată ce o echipă a realizat 8 puncte, trebuie să fie efectuată fără nici o întârziere o schimbare a terenurilor de joc, iar pozițiile jucătorilor rămân aceleași. Dacă schimbarea terenurilor nu a avut loc în momentul realizării punctului 8, aceasta trebuie să fie efectuată de îndată ce eroarea este observată. Scorul înregistrat în momentul când se efectuează schimbarea rămâne valabil.</p>
+
+			<h2>Blocajul</h2>
+			<p>Blocajul este acțiunea de interceptare a mingii care vine de la adversar efectuată de jucători plasați aproape de fileu, depășind marginea superioară a fileului. Numai jucătorilor din linia întâi le este permis să realizeze un blocaj efectiv.</p>
+
+			<h2>Pătrundere pe sub fileu</h2>
+			<p>Este permis să fie atins terenul de joc advers cu laba piciorului (picioarelor) sau cu palma (palmele), cu condiția ca cel puțin o parte a labei piciorului (picioarelor) sau a palmei (palmelor) să rămână în contact cu linia (ori să fie deasupra liniei) de centru.</p>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+		<script type="text/javascript">
+			const facts = ["Voleiul a devenit joc olimpic în 1964.", "Media de sărituri per jucător într-un meci de volei este de 300.", "Cel mai lung maraton de volei a durat 85 de ore, în 2011."];
+			function fact() {
+				document.getElementById('factcont').innerHTML = facts[Math.floor(Math.random() * facts.length)];
+			}
+			fact();
+		</script>
+	</body>
+</html>

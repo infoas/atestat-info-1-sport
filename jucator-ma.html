@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SportCentral - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><h1>SPORT<sub>CENTRAL</sub></h1></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Sporturi</a>
+					<a href="index.html#jucatori">Jucători</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/ma.jpg);">
+			<div class="content">
+				<p>Jucător</p>
+				<h1>Totul despre Muhammad Ali</h1>
+			</div>
+			<h3 class="watermark">SPORT<sub>CENTRAL</sub></h3>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Despre acest jucător</h2>
+			<p>Muhammad Ali (născut sub numele Cassius Marcellus Clay, Jr., n. 17 ianuarie 1942, Louisville, Kentucky, SUA – d. 3 iunie 2016, Scottsdale, Arizona, SUA) a fost un boxer profesionist american, campion mondial la box. În anul 1974 a fost ales Sportivul anului din SUA, iar în 1999, Ali a fost desemnat „Sportivul secolului” de revista americană Sports Illustrated. El este considerat cel mai mare campion de box la categoria grea precum și unul din cei mai populari sportivi al tuturor timpurilor. Încă de la începutul carierei profesioniste el își spunea ca fiind The Greatest și ca printr-un miracol, chiar s-a adeverit.</p>
+			<p>A fost numit după tatăl său, Cassius Marcellus Clay, Sr. Și-a schimbat numele după anul 1961, când s-a convertit la Islam (inițial la mișcarea Nation of Islam, apoi la Sunnism, devenind ulterior adept al șeicului Hisham Kabbani). A început să se antreneze la vârsta de 12 ani, reușind la 22 de ani, în 1964, să câștige pentru prima dată titlul mondial la categoria supergrea într-un meci cu Sonny Liston. A mai câștigat titlul în 1974 și 1978.</p>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+	</body>
+</html>

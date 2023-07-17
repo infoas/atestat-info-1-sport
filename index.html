@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SportCentral - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><h1>SPORT<sub>CENTRAL</sub></h1></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Sporturi</a>
+					<a href="index.html#jucatori">Jucători</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare">
+			<div class="continut">
+				<p>Următorul eveniment difuzat este în:</p>
+				<h1 id="countdown">Se încarcă&hellip;</h1>
+				<p>Maraton European</p>
+				<a href="sport-atletism.html"><button>Află mai multe</button></a>
+			</div>
+		</div>
+		<div class="welcome continut continut-centrat">
+			<h1>Bine ai venit pe <i>SPORT<sub>CENTRAL</sub></i>!</h1>
+			<h4>Află tot despre sporturile tale preferate și jucătorii care îți plac cel mai mult.</h4>
+
+			<div class="interview">
+				<iframe src="https://www.youtube.com/embed/TpxiFbD1TI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="despre">
+					<p>De actualitate</p>
+					<h2>Interviu exclusiv! cu Ion Țiriac</h2>
+					<p>Ion Țiriac a fost invitat la emisiunea „Prietenii lui Ovidiu”, transmisă integral pe GSP.ro în fiecare miercuri, ora 20:00, și a vorbit despre situația gimnasticii românești. Fostul mare jucător de tenis vorbește despre cum a făcut primul milion de euro și despre clasamentul în care a fost inclus de Forbes.</p>
+
+					<button onclick="this.parentElement.remove()" style="background: #000; width: fit-content; box-shadow: none; padding: .5em 2em;">Vizionează</button>
+				</div>
+			</div>
+		</div>
+		<div class="sondaj continut continut-centrat">
+			<h2>Sondaj: care este sportul tău preferat?</h2>
+			<div class="optiuni">
+				<button>Fotbal <span>19%</span></button>
+				<button>Cricket <span>18%</span></button>
+				<button>Baschet <span>8%</span></button>
+				<button>Baseball <span>8%</span></button>
+				<button>Fotbal american <span>7%</span></button>
+				<button>Ice hockey <span>6%</span></button>
+				<button>Alt sport <span>28%</span></button>
+			</div>
+		</div>
+		<div class="sporturi continut continut-centrat" id="sporturi">
+			<h2>Sporturi</h2>
+			<div class="sport" style="background-image: url(imagini/fotbal.jpg);">
+				<h2>Fotbal</h2>
+				<p>Fotbalul este un sport de echipă ce se dispută între două echipe alcătuite din 11 jucători fiecare. La începutul secolului al XXI-lea era jucat de peste 250 de milioane de jucători în peste 200 de țări, ceea ce îl face cel mai popular sport din lume.</p>
+				<a href="sport-fotbal.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/baschet.jpg);">
+				<h2>Baschet</h2>
+				<p>Baschetul este unul dintre cele mai răspândite sporturi de echipă din lume; se caracterizează prin finețea, precizia și fantezia exercițiilor tehnice și tactice, prin talia înaltă și calitățile fizice deosebite ale sportivilor, toate acestea implicate într-o luptă sportivă care pretinde spirit de echipă și de sacrificiu, inteligență și rezistență nervoasă.</p>
+				<a href="sport-baschet.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/scrima.jpg);">
+				<h2>Scrimă</h2>
+				<p>Scrima este arta de a mânui armele albe. După apariția armelor de foc și-a pierdut progresiv destinația militară, dar folosirea baionetei și practica duelului s-au menținut în Occident până la mijlocul secolului al XX-lea. La sfârșitul secolului al XIX-lea, s-a dezvoltat ca activitate de agrement. În prezent este un sport de combat în care armele folosite sunt floreta, spada și sabia.</p>
+				<a href="sport-scrima.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/atletism.jpg);">
+				<h2>Atletism</h2>
+				<p>Atletismul este unul din cele mai populare sporturi din lume. Este o ramură sportivă care cuprinde diverse probe de alergări și de marș, de sărituri și aruncări, sau probe combinate, la care participă atleții.</p>
+				<a href="sport-atletism.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/volei.jpg);">
+				<h2>Volei</h2>
+				<p>Voleiul este un sport în care două echipe, separate de un fileu înalt, trebuie să treacă o minge pe deasupra acestuia, cu scopul de a face ca mingea să atingă terenul advers. Fiecărei echipe îi sunt permise cel mult trei loviri (și una sau doua loviri) pentru a trimite mingea către terenul celeilalte echipe.</p>
+				<a href="sport-volei.html"><button>Află mai multe</button></a>
+			</div>
+		</div>
+		<div class="jucatori continut continut-centrat" id="jucatori">
+			<h2>Jucători</h2>
+			<div class="list">
+				<div>
+					<img src="imagini/mj.jpg">
+					<h3>Michael Jordan</h3>
+					<a href="jucator-mj.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/ma.jpg">
+					<h3>Muhammad Ali</h3>
+					<a href="jucator-ma.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/p.jpg">
+					<h3>Pele</h3>
+					<a href="jucator-p.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/sn.jpg">
+					<h3>Shaquille O'Neil</h3>
+					<a href="jucator-sn.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/lm.jpg">
+					<h3>Lionel Messi</h3>
+					<a href="jucator-lm.html"><button>Află mai multe</button></a>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				background-image: url(imagini/banner.jpg);
+				height: 600px;
+				background-size: cover;
+				background-position: 50% 40%;
+				position: relative;
+				border-bottom: .25em solid #ff0054;
+			}
+
+			.banner-mare::after {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: #0006;
+			}
+
+			.banner-mare .continut {
+				position: absolute;
+				z-index: 1;
+				color: #fff;
+				top: 50%;
+				right: 5%;
+				transform: translateY(-50%);
+				text-align: right;
+				font-size: 1.5em;
+				width: max-content;
+				max-width: 750px;
+			}
+
+			.banner-mare .continut h1 {
+				font-size: 2.5em;
+			}
+
+			.banner-mare .continut button {
+				margin-top: .5em;
+			}
+
+			.continut {
+				padding: 1em .5em;
+			}
+
+			.continut h1, .continut h2, .continut h3, .continut h4 {
+				text-align: center;
+			}
+
+			.welcome iframe {
+				aspect-ratio: 16 / 9;
+			}
+
+			.welcome .interview {
+				height: 400px;
+				aspect-ratio: 2 / 1;
+				margin: 0 auto;
+				margin-top: 2em;
+				position: relative;
+				display: flex;
+				align-items: stretch;
+			}
+
+			.welcome .interview .despre {
+				background: linear-gradient(to right, #0000, #ff0054aa 100px, #ff0054 50%);
+				text-align: justify;
+				padding: .5em;
+				padding-left: calc(.5em + 100px);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: .5em;
+				margin-left: -600px;
+			}
+
+			.welcome .interview .despre h2 {
+				text-align: justify;
+			}
+
+			@media screen and (max-width: 825px) {
+				.banner-mare .continut {
+					top: 50%;
+					right: 50%;
+					transform: translate(50%, -50%);
+					text-align: center;
+				}
+
+				.welcome .interview {
+					display: none;
+				}
+			}
+
+			.sporturi .sport {
+				max-width: 800px;
+				height: 400px;
+				background-size: cover;
+				background-position: center;
+				margin: 0 auto;
+				margin-top: .5em;
+				display: flex;
+				flex-direction: column;
+				gap: .5em;
+				text-align: right;
+				align-items: flex-end;
+				position: relative;
+			}
+
+			.sporturi .sport::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(-22.5deg, #000, #0008);
+			}
+
+			.sporturi .sport > *:first-child {
+				margin-top: auto;
+			}
+
+			.sporturi .sport > *:last-child {
+				margin-bottom: 1em;
+			}
+
+			.sporturi .sport > * {
+				position: relative;
+				max-width: 500px;
+				margin-right: 1em;
+			}
+
+			.sondaj .optiuni {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: stretch;
+				gap: .5em;
+				max-width: 800px;
+				margin: 0 auto;
+				margin-top: .5em;
+			}
+
+			.sondaj .optiuni button {
+				text-align: left;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+			.sondaj .optiuni button.used {
+				color: #ff0054;
+				background: #fff;
+			}
+
+			.sondaj .optiuni button span {
+				font-weight: normal;
+				opacity: 0;
+				transition: opacity 200ms ease;
+			}
+
+			.sondaj .optiuni.used button span {
+				opacity: 1;
+			}
+
+			.jucatori .list {
+				margin: 0 auto;
+				margin-top: .5em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 1em;
+				max-width: 800px;
+			}
+
+			.jucatori .list > * {
+				width: 200px;
+				background: white;
+				color: #ff0054;
+				flex-grow: 0;
+				flex-shrink: 0;
+				text-align: center;
+			}
+
+			.jucatori .list > * img {
+				width: 100%;
+				aspect-ratio: 1 / 1;
+				object-fit: cover;
+			}
+
+			.jucatori .list > * button {
+				box-shadow: none;
+				margin: .5em auto;
+			}
+		</style>
+		<script type="text/javascript">
+			var countDownDate = new Date().getTime() + 86400 * 1000 * 5 + 54321000;
+
+			var x = setInterval(ctd, 1000);
+			ctd();
+
+			function ctd() {
+				var distance = countDownDate - new Date().getTime();
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				document.getElementById("countdown").innerHTML = addLeadingZero(days) + "d " + addLeadingZero(hours) + "h "
+				+ addLeadingZero(minutes) + "m " + addLeadingZero(seconds) + "s ";
+
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("countdown").innerHTML = "câteva zile";
+				}
+			}
+
+			function addLeadingZero(x) {
+				if(x < 10) return "0" + x;
+				return x;
+			}
+		</script>
+		<script type="text/javascript">
+			const butoaneSondaj = Array.from(document.querySelectorAll(".sondaj .optiuni button"));
+			butoaneSondaj.forEach(el => {
+				el.addEventListener("click", function () {
+					if(el.parentElement.classList.contains("used")) return;
+					el.classList.add("used");
+					el.parentElement.classList.add("used");
+				});
+			});
+		</script>
+	</body>
+</html>
